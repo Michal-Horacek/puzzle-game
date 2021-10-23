@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+
+<VBox alignment="CENTER" spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      onKeyPressed="#onKeyPressed"
+      fx:controller="com.game2.gui.controller.NewGameController">
+
+    <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
+
+    <HBox spacing="10">
+        <Button fx:id="startGameButton" onAction="#startGame">
+            Start game </Button>
+
+        <Button fx:id="menuBtn" onAction="#onMenuBtn">
+            Menu </Button>
+    </HBox>
+
+
+    <ListView fx:id="levelList"
+              onKeyPressed="#onKeyPressed"
+                ></ListView>
+
+    <stylesheets>
+        <URL value="@/css/all.css" />
+        <URL value="@/css/newGame.css" />
+    </stylesheets>
+</VBox>

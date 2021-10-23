@@ -1,0 +1,12 @@
+.root {
+    -fx-background-color: black;
+}
+
+.button {
+    -fx-background-color: gold;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: yellow;
+}

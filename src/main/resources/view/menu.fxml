@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.game2.gui.controller.MenuController">
+
+    <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
+
+    <Button fx:id="newGameButton"
+            onAction="#startNewGame">
+        New game
+    </Button>
+
+    <Button fx:id="settingsButton"
+            onAction="#showSettings">
+        Settings
+    </Button>
+
+    <Button fx:id="editorButton"
+            onAction="#showEditor">
+        Editor
+    </Button>
+
+    <Button fx:id="quitButton"
+            onAction="#quit">
+        Quit
+    </Button>
+
+    <Button fx:id="resumeButton"
+            onAction="#resume"
+
+            visible="false">
+        Resume
+    </Button>
+
+    <stylesheets>
+        <URL value="@/css/all.css" />
+        <URL value="@/css/menu.css" />
+    </stylesheets>
+</VBox>
