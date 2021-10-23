@@ -1,0 +1,13 @@
+.button {
+    -fx-font-size: 16;
+    -fx-pref-width: 120;
+}
+
+.label {
+    -fx-font-size: 26;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: yellow;
+}

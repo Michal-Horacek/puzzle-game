@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import java.net.URL?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER"
+      spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      onKeyPressed="#onKeyPressed"
+      fx:id="root"
+      fx:controller="com.game2.gui.controller.SettingsController">
+
+    <Button></Button>
+
+    <stylesheets>
+        <URL value="@/css/all.css" />
+        <URL value="@/css/settings.css" />
+    </stylesheets>
+
+</VBox>
