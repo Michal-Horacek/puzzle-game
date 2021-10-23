@@ -1,0 +1,24 @@
+.button {
+    -fx-font-size: 30;
+    -fx-pref-width: 300;
+}
+
+.button:focused {
+    -fx-background-color: yellow;
+}
+
+#resumeButton {
+    -fx-background-color: orange;
+}
+
+#resumeButton:focused {
+    -fx-background-color: yellow;
+}
+
+#resumeButton:hover {
+    -fx-background-color: yellow;
+}
+
+/*#resumeButton:hover {*/
+    /*-fx-background-color: gold;*/
+/*}*/

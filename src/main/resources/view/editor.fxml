@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import java.net.URL?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<VBox alignment="CENTER"
+      spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      onKeyPressed="#onKeyPressed"
+      fx:id="root"
+      fx:controller="com.game2.gui.controller.EditorController">
+
+    <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
+
+    <HBox spacing="10">
+        <Button onAction="#onMenuBtn">Menu</Button>
+        <Button onAction="#onClearMapBtn">Clear map</Button>
+        <Button onAction="#onLoadMapBtn">Load map</Button>
+        <Button onAction="#onSaveMapBtn">Save map</Button>
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT">
+        <Canvas fx:id="entityPanel"
+                onMousePressed="#onEntityPanelPressed"/>
+    </HBox>
+    <HBox alignment="CENTER_LEFT" spacing="5">
+        <Canvas fx:id="skinPanel"
+                onMousePressed="#onSkinPanelPressed"/>
+        <Button fx:id="skinLeft" onMouseClicked="#onSkinLeftClicked">&lt;</Button>
+        <Button fx:id="skinRight" onMouseClicked="#onSkinRightClicked">&gt;</Button>
+    </HBox>
+
+    <Canvas fx:id="canvas"
+            onMouseMoved="#onMouseMoved"
+            onMousePressed="#onMousePressed"
+            onMouseDragged="#onMouseDragged"
+            onMouseReleased="#onMouseReleased"
+            onMouseExited="#onMouseExited"/>
+
+    <stylesheets>
+        <URL value="@/css/all.css" />
+        <URL value="@/css/editor.css" />
+    </stylesheets>
+
+</VBox>

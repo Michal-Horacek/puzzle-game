@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER"
+      spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:id="root"
+      fx:controller="com.game2.gui.controller.PlaygroundController">
+
+    <padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
+
+    <HBox spacing="60">
+        <HBox spacing="10">
+            <Button fx:id="menuButton"
+                    onAction="#showMenu">
+                Menu
+            </Button>
+
+            <Button fx:id="resetButton"
+                    onAction="#reset">
+                Reset
+            </Button>
+        </HBox>
+
+        <HBox></HBox>
+        <HBox></HBox>
+        <HBox></HBox>
+
+        <HBox spacing="15" alignment="CENTER">
+            <Canvas fx:id="keyCanvas"/>
+            <Label fx:id="keyLabel"></Label>
+        </HBox>
+        <HBox spacing="15" alignment="CENTER">
+            <Canvas fx:id="drillCanvas"/>
+            <Label fx:id="drillLabel"></Label>
+        </HBox>
+        <HBox spacing="15" alignment="CENTER">
+            <Canvas fx:id="starCanvas"/>
+            <Label fx:id="starLabel"></Label>
+        </HBox>
+        <HBox spacing="15" alignment="CENTER">
+            <Label fx:id="movesLabel"></Label>
+        </HBox>
+    </HBox>
+
+
+    <Canvas fx:id="canvas"/>
+
+    <stylesheets>
+        <URL value="@/css/all.css" />
+        <URL value="@/css/playground.css" />
+    </stylesheets>
+
+</VBox>
